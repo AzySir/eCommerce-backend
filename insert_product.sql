@@ -1,0 +1,1 @@
+INSERT INTO product VALUES (12312312, "Skinny Jeans", "Levi", "Blue", "99", "http://images.asos-media.com/products/levis-youth-519-super-skinny-fit-hi-ball-roll-jeans-in-can-can-advanced-stretch-dark-wash/14636802-1-cancanadvancedstr?$n_480w$&wid=476&fit=constrain", "42 W, 40 W, 38 W, 36 W", 0, "", "", "Mens", "40cm", "20cm")
