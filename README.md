@@ -1,2 +1,3 @@
 # eCommerce Backend - Work In Progress
 ## Coming soon...
+## Yes there are secrets in this repo, yes I know it's bad practice
