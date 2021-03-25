@@ -18,18 +18,12 @@ const (
     db_port = "3306"
 	db = "mydb"
 	db_user = "root"
-	db_host = "127.0.0.0.1"
+	db_host = "127.0.0.1"
 	db_password = "admin"
 )
 
-type Error struct {
-	RequestCode int `json:"request_code"`
-	ErrorCode int `json:"error_code"`
-	ErrorName string `json:"name"`
-	ErrorDescription string `json:"description"`
-}
-
 func GetConnection() *sql.DB {
+	fmt.Println(fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", db_user, db_password, db_host, db_port, db))
 	conn, err := sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", db_user, db_password, db_host, db_port, db))
 	if err != nil {
 		panic(err.Error()) // proper error handling instead of panic in your app
