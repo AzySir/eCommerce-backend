@@ -96,7 +96,7 @@ func GetAllProducts() []byte {
 		ProductList = append(ProductList, product)
 	}
 
-	p, _ := json.MarshalIndent(ProductList, "", "  ")
+	p, err := json.MarshalIndent(ProductList, "", "  ")
 	log.Println(string(p))
 
 	if err := results.Err(); err != nil {
